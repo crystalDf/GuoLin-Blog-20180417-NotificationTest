@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NotificationTest</string>
+    <string name="send_chat_message">发送聊天消息</string>
+    <string name="send_subscribe_message">发送订阅消息</string>
 </resources>
