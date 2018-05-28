@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     .setSmallIcon(R.drawable.ic_launcher_foreground)
                     .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher_foreground))
                     .setAutoCancel(true)
+                    .setNumber(2)
                     .build();
             notificationManager.notify(2, notification);
         });
@@ -83,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationChannel notificationChannel =
                 new NotificationChannel(channelId, channelName, importance);
+
+        notificationChannel.setShowBadge(true);
 
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
